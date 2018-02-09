@@ -1,0 +1,26 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    border: solid 1px lightskyblue;
+}
+
+p {
+    color: blue;
+}
+
+.relleno{
+    color: green;
+}
+
+.mayusculas{
+    text-transform: uppercase;
+}
+
+/* heredo el azul*/
+#especial{
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+}
