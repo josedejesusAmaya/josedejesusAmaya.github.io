@@ -20,7 +20,34 @@ p {
 #especial{
     text-transform: capitalize;
 }
-
+/*
 a{
     text-decoration: none;
+}
+*/
+/*
+div p {
+    color: blueviolet;
+}
+*/
+
+h1 + p {
+    background-color: black;
+}
+/*
+input[type="password"]{
+    background-color: darkslateblue;
+}
+*/
+/*
+input{
+    background-color: darkslateblue;
+}
+*/
+form div:hover{
+    background-color: goldenrod;
+}
+
+a:visited{
+    text-transform: uppercase;
 }
