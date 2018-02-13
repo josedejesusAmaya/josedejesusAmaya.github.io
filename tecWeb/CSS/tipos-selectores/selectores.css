@@ -49,5 +49,27 @@ form div:hover{
 }
 
 a:visited{
-    text-transform: uppercase;
+    color: midnightblue;
+}
+
+#ejemplo li:nth-of-type(even){
+    background-color: black;
+}
+
+/* pseudo-elementos*/
+p::first-letter{
+    color: aquamarine;
+    font-size: 30px;
+}
+
+li{
+    background-color: darkgreen;
+}
+
+li{
+    background-color: hotpink;
+}
+
+.primero{
+    background-color: darkred; 
 }
