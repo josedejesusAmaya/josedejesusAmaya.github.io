@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <title>Formulario</title>
+
+</head>
+<body>
+    <h1>Register</h1>
+    <form method="POST" action="http://tecweb-eloyhz.c9users.io/envio.php">
+        <div>
+            <label for="nombre">
+                First Name:    
+            </label>
+            <input id="nombre" type="text" name="nombre" placeholder="your first name">
+            <label for="apellido">
+                Last Name:
+            </label>
+            <input id="apellido" type="text" name="apellido" placeholder="your last name">
+        </div>
+        
+        <div>
+            <label for="generoM">Male</label>
+            <input type="radio" name="genero" id="masculino" value="masculino">
+            
+            <label for="generoF">Female</label>
+            <input type="radio" name="genero" id="femenino" value="femenino">
+            
+            <label for="generoO">Other</label>
+            <input type="radio" name="genero" id="otro" value="otro">
+        </div>
+            
+        <div>
+            <label for="correo">
+                Email: 
+            </label>
+
+            <input id="correo" type="text" name="correo" placeholder="your email">
+            
+            <label for="contraseña">
+                Password
+            </label>
+            <input id="contraseña" type="password" name="contraseña" placeholder="your password" required>    
+        </div>
+
+        <div>
+            <label for="cumpleaños">
+                Birthday:
+            </label>
+            <input type="date" name="fecha">
+            
+        </div>
+
+        <div>
+            <label for="condicion">I agree to the therms and conditions</label>
+            <input type="radio" name="conditions" id="conditions" value="conditions">
+        </div>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
