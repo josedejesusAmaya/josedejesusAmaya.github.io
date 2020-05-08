@@ -1,2 +1,2 @@
 # josedejesusAmaya.github.io
-Página oficial.
+Marca personal.
