@@ -1,2 +1,2 @@
 # josedejesusAmaya.github.io
-Repositorio personal.
+Página oficial.
