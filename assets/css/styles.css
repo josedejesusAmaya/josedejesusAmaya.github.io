@@ -9,22 +9,29 @@
 
 .max-width {
     max-width: 1300px;
-    padding: 0 80px;
+    padding: 0 0 0 80px;
 }
 
 .max-width-menu {
     margin-left: auto;
     margin-right: 0;
-    padding: 0 80px;
+    padding: 0 80px 0 0;
+    display: flex;
 }
 
 /* navbar styling */
 .navbar {
     position: fixed !important;
     width: 100%;
-    /* background: crimson; */
-    padding: 30px 0;
+    padding: 17px 0;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    flex-wrap: nowrap !important;
+}
+
+.navbar.sticky {
+    background: black;
+    padding: 15px 0;
 }
 
 .navbar .max-width {
@@ -39,8 +46,18 @@
     font-weight: 600;
 }
 
+.navbar .logo a span {
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: white;
+}
+
 .menu {
     margin-bottom: 0;
+    padding: 0 2rem;
 }
 
 .navbar .menu li {
@@ -55,6 +72,23 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: crimson;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: white;
+}
+
+/* menu btn styling */
+.menu-btn {
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: block;
 }
 
 /* home section styling */
@@ -89,4 +123,47 @@
 .home .home-content .text-3 span {
     color: black;
     font-weight: 500;
+}
+
+/* responsive media query start */
+@media (max-width: 947px) {
+    .max-width {
+        padding: 0 0 0 50px;
+    }
+    
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .max-width-menu {
+        padding: 0 50px 0 0;
+        display: flex;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }    
 }
