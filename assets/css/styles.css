@@ -88,7 +88,7 @@
     color: white;
     font-size: 23px;
     cursor: pointer;
-    display: block;
+    display: none;
 }
 
 /* home section styling */
@@ -136,6 +136,10 @@
         z-index: 999;
     }
 
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+
     .max-width-menu {
         padding: 0 50px 0 0;
         display: flex;
@@ -165,5 +169,6 @@
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
-    }    
+    }
+
 }
