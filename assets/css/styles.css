@@ -143,16 +143,12 @@
     background: none;
 }
 
-/* about section */
+/* all similar content styling code */
 .section {
     padding: 100px 0;
 }
 
-.about {
-    font-family: 'Poppins', sans-serif;
-}
-
-.about .title {
+section .title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -162,7 +158,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-.about .title::before {
+section .title::before {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -173,8 +169,7 @@
     transform: translateX(-50%);
 }
 
-.about .title::after {
-    content: "who i am";
+section .title::after {
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -183,6 +178,15 @@
     padding: 5px;
     background: white;
     transform: translateX(-50%);
+}
+
+/* about section */
+.about, .projects {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title::after {
+    content: "who I am";
 }
 
 .about .about-content {
@@ -236,6 +240,11 @@
 .about .about-content .right a:hover {
     color: black;
     background: none;
+}
+
+/* projects section start */
+.projects .title::after {
+    content: "";
 }
 
 /* responsive media query start */
