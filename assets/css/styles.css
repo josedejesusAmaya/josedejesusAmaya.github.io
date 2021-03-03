@@ -189,7 +189,8 @@ section .title::after {
     content: "who I am";
 }
 
-.about .about-content {
+.about .about-content, 
+.projects .proj-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -243,8 +244,18 @@ section .title::after {
 }
 
 /* projects section start */
+.projects, .projects .card {
+    color: white;
+    background: #111;
+}
+
+.projects .title::before {
+    background: white;
+}
+
 .projects .title::after {
     content: "";
+    background: #111;
 }
 
 /* responsive media query start */
