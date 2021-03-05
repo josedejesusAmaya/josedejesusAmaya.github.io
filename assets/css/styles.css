@@ -258,6 +258,44 @@ section .title::after {
     background: #111;
 }
 
+.projects .proj-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.projects .proj-content .card:hover {
+    background: crimson;
+}
+
+.projects .proj-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.projects .proj-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.projects .proj-content .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.projects .proj-content .card:hover i {
+    color: white;
+}
+
+.projects .proj-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
 /* responsive media query start */
 @media (max-width: 1300px) {
     .home .max-width {
@@ -352,7 +390,11 @@ section .title::after {
 
     .about .about-content .right {
         flex: 100%;
+    }
 
+    .projects .proj-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
     }
 }
 
@@ -372,6 +414,10 @@ section .title::after {
     .home .home-content a {
         font-size: 12px;
         padding: 9px 22px;
+    }
+
+    .projects .proj-content .card {
+        width: 100%;
     }
 }
 
