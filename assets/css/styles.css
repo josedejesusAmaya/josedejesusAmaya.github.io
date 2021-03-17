@@ -9,7 +9,7 @@
 
 .max-width {
     max-width: 1300px;
-    padding-left: 40px;
+    padding: 0 0 0 40px;
 }
 
 .max-width-menu {
@@ -144,7 +144,7 @@
 }
 
 /* all similar content styling code */
-.about, .projects, .skills {
+.about, .projects, .skills, .contact {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -189,7 +189,7 @@ section .title::after {
     content: "who I am";
 }
 
-
+.contact .contact-content,
 .about .about-content,
 .skills .skills-content {
     display: flex;
@@ -251,11 +251,13 @@ section .title::after {
 }
 
 /* projects section start */
+.teams, .teams .card,
 .projects, .projects .card {
     color: white;
     background: #111;
 }
 
+.teams .title::before,
 .projects .title::before {
     background: white;
 }
@@ -349,6 +351,39 @@ section .title::after {
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
+}
+
+/* contact section style */
+.contact .title::after {
+    content: "get in touch";
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
 }
 
 /* responsive media query start */
