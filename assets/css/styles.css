@@ -27,7 +27,7 @@
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
     flex-wrap: nowrap !important;
-    background-color: blue;
+    background-color: #3F4E85;
     z-index: 999;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .navbar .menu li a:hover {
-    color: crimson;
+    color: #2B3343;
 }
 
 .navbar.sticky .menu li a:hover {
@@ -96,7 +96,8 @@
 /* home section styling */
 .home {
     display: flex;
-    background: url("../images/banner.jpg") no-repeat center;
+    /*background: url("../images/banner.jpg") no-repeat center;*/
+    background: #3F4E85;
     height: 100vh;
     color: white;
     min-height: 500px;
@@ -143,6 +144,10 @@
     background: none;
 }
 
+.home .home-content .column .right img {
+    border-radius: 100%;
+}
+
 /* all similar content styling code */
 .about, .projects, .skills, .contact {
     font-family: 'Poppins', sans-serif;
@@ -184,9 +189,18 @@ section .title::after {
     transform: translateX(-50%);
 }
 
+.about {
+    background: #4C5C96;
+}
+
+.skills {
+    background: #45558D;
+}
+
 /* about section */
 .about .title::after {
     content: "who I am";
+    background: #4C5C96;
 }
 
 .contact .contact-content,
@@ -206,11 +220,12 @@ section .title::after {
 
 .about .about-content .left {
     width: 45%;
+    text-align: center;
 }
 
 .about .about-content .left img {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -278,7 +293,7 @@ section .title::after {
 }
 
 .projects .proj-content .card:hover {
-    background: crimson;
+    background: #4C5C96;
 }
 
 .projects .proj-content .card .box {
@@ -300,7 +315,7 @@ section .title::after {
 }
 
 .projects .proj-content .card .text {
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
@@ -308,6 +323,7 @@ section .title::after {
 /* skill section styling */
 .skills .title::after {
     content: "what I know";
+    background: #45558D;
 }
 
 .skills .skills-content .column {
