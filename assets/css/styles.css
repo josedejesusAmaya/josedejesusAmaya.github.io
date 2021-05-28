@@ -183,7 +183,7 @@ section .title::after {
     bottom: -12px;
     left: 50%;
     font-size: 20px;
-    color: blue;
+    color: white;
     padding: 5px;
     background: white;
     transform: translateX(-50%);
@@ -215,7 +215,7 @@ section .title::after {
 .projects .proj-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .about .about-content .left {
@@ -241,7 +241,7 @@ section .title::after {
 }
 
 .about .about-content .right .text span {
-    color: blue;
+    color: white;
 }
 
 .about .about-content .right p {
@@ -290,6 +290,7 @@ section .title::after {
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 2rem;
 }
 
 .projects .proj-content .card:hover {
@@ -298,6 +299,10 @@ section .title::after {
 
 .projects .proj-content .card .box {
     transition: all 0.3s ease;
+}
+
+.projects .proj-content .card .box img {
+    border-radius: 5px 5px 0 0; width: 80%;
 }
 
 .projects .proj-content .card:hover .box {
@@ -369,9 +374,14 @@ section .title::after {
     border-radius: 6px;
 }
 
+.contact {
+    background: #45558D;
+}
+
 /* contact section style */
 .contact .title::after {
     content: "get in touch";
+    background: #45558D;
 }
 
 .contact .contact-content .column {
