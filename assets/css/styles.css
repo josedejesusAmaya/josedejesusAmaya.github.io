@@ -410,6 +410,10 @@ section .title::after {
     align-items: center;
 }
 
+.contact .contact-content .column a {
+    color: #212529;
+}
+
 .contact .contact-content .column .head {
     font-weight: bold;
 }
