@@ -303,9 +303,17 @@ section .title::after {
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
-    cursor: pointer;
+    /*cursor: pointer;*/
     transition: all 0.3s ease;
     margin-bottom: 2rem;
+}
+
+.projects .proj-content .card a {
+    color: white;
+}
+
+.projects .proj-content .card a:hover {
+    color: black;
 }
 
 .projects .proj-content .card:hover {
