@@ -12,6 +12,10 @@
     padding: 0 0 0 40px;
 }
 
+.max-width-projects {
+    padding: 0 40px 0 40px;
+}
+
 .max-width-menu {
     margin-left: auto;
     margin-right: 0;
@@ -148,6 +152,7 @@
     border-radius: 100%;
 }
 
+
 /* all similar content styling code */
 .about, .projects, .skills, .contact {
     font-family: 'Poppins', sans-serif;
@@ -198,12 +203,6 @@ section .title::after {
 }
 
 /* about section */
-.about .max-width,
-.projects .max-width,
-.contact .max-width {
-    padding-top: 5rem;
-}
-
 .contact .max-width {
     padding-bottom: 3rem;
 }
@@ -238,10 +237,9 @@ section .title::after {
 }
 
 .about .about-content .left img {
-    height: 250px;
     width: 250px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 100%;
     margin-bottom: 1rem;
 }
 
@@ -261,6 +259,7 @@ section .title::after {
 
 .about .about-content .right p {
     text-align: justify;
+    font-size: larger;
 }
 
 .about .about-content .right a {
@@ -451,6 +450,17 @@ section .title::after {
 }
 
 /* responsive media query start */
+@media (max-width: 1920px) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+
+    .projects .proj-content .card .box img {
+        border-radius: 5px 5px 0 0;
+        width: 60%;
+    }
+}
+
 @media (max-width: 1300px) {
     .home .max-width {
         margin-left: 0px;
@@ -578,6 +588,14 @@ section .title::after {
     .skills .skills-content .column,
     .projects .proj-content .card {
         width: 100%;
+    }
+
+    .about .about-content .left img {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 0px;
+        object-fit: scale-down;
+        border-radius: 1rem;
     }
 }
 
